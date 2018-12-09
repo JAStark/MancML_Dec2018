@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>MancML Dec 2018 - Agent Based Models</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/custom_moon.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- <section data-background-iframe="p5-codes/withinwalls/index.html"> -->
+					<section data-background-iframe="file:///Users/jenniferstark/Documents/Repositories/MancML_Dec2018/p5-codes/NOC_6_03_StayWithinWalls/index.html">
+					<h1>Agent-Based Models</h1>
+					<h3>How can we use them?</h3>
+					<p>Jennifer A. Stark Ph.D.</p>
+					<p>Data Engineer & Analyst, SpareRoom</p>
+					<p>PyDataMCR Co-organiser</p>
+				</section>
+
+				<section>
+					<section>
+						<h3>My Dark Past …</h3>
+						<p class="fragment fade-in-then-out">As a Neuroscience Post Doc</p>
+						<p class="fragment fade-in-then-out">As a Research Assistant</p>
+						<p class="fragment fade-in">As a Computational Journalism Post Doc</p>
+						<p class="highlight fragment fade-in"> - "Algorithmic Accountability"</p>
+					</section>
+					<section>
+						<h3>Uber Story</h3>
+						"Because with Uber there is  <span class="highlight-2">no destination discrimination </span>— no refusals based on what you look like or where you live."
+						– <a href="https://medium.com/uber-under-the-hood/uber-s-impact-on-minority-communities-4cc7f5072a47"><em>Uber Under the Hood, Medium</em></a>
+					</section>
+					<section>
+						<h4>Predictors of wait time for a car:</h4>
+						<li class="goleft">Race, ethnicity</li>
+						<li class="goleft">Income & poverty</li>
+						<li class="goleft">Population density</li>
+					</section>
+					<section>
+						<h4>Additional predictors:</h4>
+						<li class="goleft">Violent crime</li>
+						<li class="goleft">"place" density, eg restaurants, offices, schools…</li>
+					</section>
+					<section>
+						<h4>Unable to measure:</h4>
+						<li class="goleft">Competition (taxis)</li>
+						<li class="goleft">Traffic flow</li>
+						<li class="goleft">Access to smart phone, credit cards…</li>
+						<li class="goleft">All the million interactions and <span class="highlight">human behaviors</span></li>
+					</section>
+					<section data-background-image="img/Uber_misalignedIncentives1.png" data-background-size="contain">
+					</section>
+					<section>
+						<h3 class='title'>&#8220;Cycles, Systems, &amp; Loops&#8221;</h3>
+					</section>
+					<section>
+						<p class="highlight">Can we design or simulate a complex system with these attributes??</p>
+					</section>
+				</section>
+
+
+				<section>
+					<section data-background-iframe="file:///Users/jenniferstark/Documents/Repositories/MancML_Dec2018/p5-codes/NOC_6_08_SeparationAndSeek/index.html">
+						<p class="highlight">Yes!</p>
+						<h3 class="fragment fade-in">Agent Based Models</h3>
+							<li class="goleft fragment fade-in">Computer Simulation to understand complex systems</li>
+							<li class="goleft fragment fade-in">World, agents with rules, time</li>
+							<li class="goleft fragment fade-in">Gives rise to emergent behaviour</li>
+					</section>
+						<section>
+							<h3>Tools!</h3>
+							<p>Simpy</p>
+							<p>Mesa (GitHub: /projectmesa/mesa)</p>
+						</section>
+						<section data-background-iframe="https://simpy.readthedocs.io/en/latest/" data-background-interactive>
+						</section>
+						<section data-background-video="./img/project_mesa_overview.mov" data-background-video-loop>
+						</section>
+					<section>
+						<li class="goleft">what can they do?</li>
+						<li class="goleft fragment fade-in">Can they do things?</li>
+						<li class="goleft fragment fade-in">Let's find out!</li>
+					</section>
+					<section>
+						<h3 class="highlight">Agent Based Models: <em>Abstract models</em></h3>
+						<li class="goleft fragment fade-in">Facilitate theory building</li>
+						<li class="goleft fragment fade-in">Check your assumptions</li>
+						<li class="goleft fragment fade-in">Understand observed patterns - can you recreate them?</li>
+						<li class="goleft fragment fade-in">Schelling's segregation model - bias? How much bias??</li>
+					</section>
+					<section data-background-video="./img/mesa_browser_schelling.mov" data-background-video-loop>
+					</section>
+					<section data-background-image="./img/parable_polygon_screenshot.png">
+					</section>
+					<section data-background-video="./img/parable_extend_model.mov" data-background-video-loop>
+					</section>
+					<section>
+						<h3 class="highlight">Agent Based Models: <em>Empirical models</em></h3>
+						<li class="goleft fragment fade-in">To predict outcomes (<em>empircal models</em>)</li>
+						<li class="goleft fragment fade-in">Traffic, evacuations</li>
+						<br>
+						<li class="goleft fragment fade-in">...Uber story somewhere in between...</li>
+					</section>
+				</section>
+
+					<section>
+						<h3>References:</h3>
+						<p class="small"><a href="https://github.com/projectmesa/mesa" target="_blank">The Mesa Project</a></p>
+						<p class="small"><a href="https://www.youtube.com/watch?time_continue=69&v=bjjoHji8KUQ" target="_blank">The Mesa Project</a> - Jackie Kazil PyDataDC 2016</p>
+						<p class="small"><a href="https://www.youtube.com/watch?v=RglNX4c_dfc" target="_blank">Forecasting Social Inequality</a> - James Allen PyData London 2017<p>
+							<p class="small"><a href="https://p5js.org" target="_blank">p5.js</a> - JavaScript library based on Processing to make coding fun and accessible</p>
+							<p class="small"><a href="https://github.com/shiffman/The-Nature-of-Code-Examples-p5.js" target="_blank">p5 agents</a> - from Nature of Code book: p5 examples</p>
+						<p class="small"><a href="https://simpy.readthedocs.io/en/latest/" target="_blank">Simpy</a> - Discrete event simulation for Python</p>
+						<p class="small"><a href="https://explorabl.es" target="_blank">Explorable Explanations</a> - Hub for learning through play</p>
+						<p class="small"><a href="https://ncase.me/loopy/" target="_blank">LOOPY</a> - a tool for thinking in systems</p>
+						<p class="small"><a href="https://revealjs.com/#/" target="_blank">Reveal.js</a> - used for this presentation</p>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
