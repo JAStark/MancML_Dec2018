@@ -1,6 +1,6 @@
 # "Agent Based Models: How Can We Use Them?" presented at [MancML at ARM, 06-12-2018](https://www.mancml.io)
 
-[Slides](https://jastark.github.io/MancML_Dec2018) made using [reveal.js](https://github.com/hakimel/reveal.js#slide-backgrounds) – so much fun to use!
+[Slides](https://jastark.github.io/MancMLDec2018) made using [reveal.js](https://github.com/hakimel/reveal.js#slide-backgrounds) – so much fun to use!
 
 ## Resources I talk about:
 - [Mesa](https://github.com/projectmesa/mesa) is an agent-based modeling framework in Python. And [here](https://www.youtube.com/watch?time_continue=69&v=bjjoHji8KUQ) is a PyDataDC 2016 talk on it by the amazing [Jackie Kazil](https://github.com/jackiekazil).
